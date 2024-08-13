@@ -18,6 +18,7 @@ enum 🧩Entity {
 
 // Spawns each ball
 private extension 🧩Entity {
+    // 在这里修改每个球体实体的属性
     private static func genericBall(color: UIColor) -> Entity {
         let value = Entity()
         let ball = ModelComponent(mesh: .generateSphere(radius: 0.005), materials: [SimpleMaterial(color: color, isMetallic: false)])

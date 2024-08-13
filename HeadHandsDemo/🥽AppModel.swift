@@ -11,6 +11,8 @@ class 🥽AppModel: ObservableObject {
     
     // Public var that maintains each hand's last handAnchor + joints
     @Published var latestHandTracking: HandsUpdates = .init(left: nil, right: nil)
+    
+    
     struct HandsUpdates {
         var left: HandAnchor?
         var right: HandAnchor?
@@ -79,25 +81,55 @@ class 🥽AppModel: ObservableObject {
         }
     }
 
-    // Add function that detects custom tap gestures
+    // 增加检测自定义手势
     func detectCustomTaps() -> Int? {
-        // Make sure both hands are tracked rn
+        // 确保当前左右手都在被跟踪
         guard let leftHandAnchor = latestHandTracking.left,
               let rightHandAnchor = latestHandTracking.right,
               leftHandAnchor.isTracked, rightHandAnchor.isTracked else {
             return nil
         }
         
-        if (touching("rightThumbTip", "leftThumbTip")){
-            colorJoint("rightThumbTip", .red)
-            colorJoint("leftThumbTip", .red)
-        } else{
-            colorJoint("rightThumbTip", .cyan)
-            colorJoint("leftThumbTip", .cyan)
+        // 定义所有手指指尖的关节名称
+        let fingertipJoints = [
+            "leftThumbTip", "leftIndexTip", "leftMiddleTip", "leftRingTip", "leftPinkyTip",
+            "rightThumbTip", "rightIndexTip", "rightMiddleTip", "rightRingTip", "rightPinkyTip"
+        ]
+        
+        // 初始化一个字典来跟踪每个关节是否接触
+        var touchingStatus = [String: Bool]()
+        
+        // 将所有指尖设为默认的非接触状态
+        fingertipJoints.forEach { joint in
+            touchingStatus[joint] = false
+            colorJoint(joint, .cyan)  // 设置为初始颜色
         }
-         
+        
+        // 检测每对指尖是否接触
+        for i in 0..<fingertipJoints.count {
+            for j in i+1..<fingertipJoints.count {
+                let joint1 = fingertipJoints[i]
+                let joint2 = fingertipJoints[j]
+                
+                if touching(joint1, joint2) {
+                    touchingStatus[joint1] = true
+                    touchingStatus[joint2] = true
+                }
+            }
+        }
+        
+        // 根据接触状态改变颜色
+        for joint in fingertipJoints {
+            if touchingStatus[joint] == true {
+                colorJoint(joint, .red)
+            } else {
+                colorJoint(joint, .cyan)
+            }
+        }
+        
         return 0
     }
+
     
     public var leftPosition: SIMD3<Float> {
         self.majorBalls[5].position
@@ -146,6 +178,18 @@ extension 🥽AppModel {
     func positionOfJoint(_ jointName: String) -> simd_float3? {
 //        return jointMapping[jointName].flatMap { self.majorBalls[$0].position }
         return self.majorBalls[jointMapping[jointName]!].position
+    }
+    
+    func getAllFingerJointPositions() -> [String: SIMD3<Float>] {
+        var jointPositions = [String: SIMD3<Float>]()
+        
+        for (jointName, index) in jointMapping {
+            // 获取对应关节的坐标
+            let position = majorBalls[index].position
+            jointPositions[jointName] = position
+        }
+        
+        return jointPositions
     }
 
     func jointDist(_ joint1: String, _ joint2: String) -> Float {

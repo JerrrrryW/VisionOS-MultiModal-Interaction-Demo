@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		160ED7982B4B74C5002AD987 /* 🧑HeadTrackingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160ED7972B4B74C5002AD987 /* 🧑HeadTrackingSystem.swift */; };
-		1642FAB92B4D6CAA0084F9ED /* 🌐RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642FAB82B4D6CAA0084F9ED /* 🌐RealityView.swift */; };
 		164C78032B5746AD008FF872 /* 🧩Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164C78022B5746AD008FF872 /* 🧩Entity.swift */; };
 		165ADB4F2B4B71B0008A756F /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165ADB4E2B4B71B0008A756F /* App.swift */; };
 		165ADB512B4B71B0008A756F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165ADB502B4B71B0008A756F /* ContentView.swift */; };
@@ -17,7 +16,6 @@
 		166F7E4C2B7DC36C005F70D5 /* App.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 165ADB4E2B4B71B0008A756F /* App.swift */; };
 		166F7E4D2B7DC36C005F70D5 /* ContentView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 165ADB502B4B71B0008A756F /* ContentView.swift */; };
 		166F7E4E2B7DC36C005F70D5 /* 🥽AppModel.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16688DE52B59F35F004CE12B /* 🥽AppModel.swift */; };
-		166F7E4F2B7DC36C005F70D5 /* 🌐RealityView.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1642FAB82B4D6CAA0084F9ED /* 🌐RealityView.swift */; };
 		166F7E502B7DC36C005F70D5 /* 🧩Entity.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 164C78022B5746AD008FF872 /* 🧩Entity.swift */; };
 		166F7E532B7DC36C005F70D5 /* 🧑HeadTrackingSystem.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 160ED7972B4B74C5002AD987 /* 🧑HeadTrackingSystem.swift */; };
 		166F7E552B7DC36C005F70D5 /* 🛠️MenuTop.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16C95AE42B5E762400CF0FED /* 🛠️MenuTop.swift */; };
@@ -26,6 +24,9 @@
 		16C95AE52B5E762400CF0FED /* 🛠️MenuTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C95AE42B5E762400CF0FED /* 🛠️MenuTop.swift */; };
 		16C95AE72B5E7BFF00CF0FED /* 🛠️AboutPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C95AE62B5E7BFF00CF0FED /* 🛠️AboutPanel.swift */; };
 		6E6062712B9D39A200ED5FC1 /* andyhead3d2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6E6062702B9D39A200ED5FC1 /* andyhead3d2.usdz */; };
+		8620833E2C6B726E004D3026 /* FingerTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8620833D2C6B726E004D3026 /* FingerTrackingView.swift */; };
+		86BCBB3D2C64D2E2003BD1CE /* 🌐RealityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BCBB3C2C64D2E2003BD1CE /* 🌐RealityView.swift */; };
+		86BCBB3F2C664490003BD1CE /* JonintPositionsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BCBB3E2C664490003BD1CE /* JonintPositionsPanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,7 +39,6 @@
 				166F7E4C2B7DC36C005F70D5 /* App.swift in CopyFiles */,
 				166F7E4D2B7DC36C005F70D5 /* ContentView.swift in CopyFiles */,
 				166F7E4E2B7DC36C005F70D5 /* 🥽AppModel.swift in CopyFiles */,
-				166F7E4F2B7DC36C005F70D5 /* 🌐RealityView.swift in CopyFiles */,
 				166F7E502B7DC36C005F70D5 /* 🧩Entity.swift in CopyFiles */,
 				166F7E532B7DC36C005F70D5 /* 🧑HeadTrackingSystem.swift in CopyFiles */,
 				166F7E552B7DC36C005F70D5 /* 🛠️MenuTop.swift in CopyFiles */,
@@ -51,7 +51,6 @@
 /* Begin PBXFileReference section */
 		160ED7972B4B74C5002AD987 /* 🧑HeadTrackingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧑HeadTrackingSystem.swift"; sourceTree = "<group>"; };
 		16267B532B57D387000CA8AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		1642FAB82B4D6CAA0084F9ED /* 🌐RealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🌐RealityView.swift"; sourceTree = "<group>"; };
 		164C78022B5746AD008FF872 /* 🧩Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🧩Entity.swift"; sourceTree = "<group>"; };
 		165ADB472B4B71B0008A756F /* HeadHandsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadHandsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165ADB4E2B4B71B0008A756F /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -63,6 +62,9 @@
 		16C95AE42B5E762400CF0FED /* 🛠️MenuTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛠️MenuTop.swift"; sourceTree = "<group>"; };
 		16C95AE62B5E7BFF00CF0FED /* 🛠️AboutPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🛠️AboutPanel.swift"; sourceTree = "<group>"; };
 		6E6062702B9D39A200ED5FC1 /* andyhead3d2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = andyhead3d2.usdz; path = HeadHandsDemo/andyhead3d2.usdz; sourceTree = SOURCE_ROOT; };
+		8620833D2C6B726E004D3026 /* FingerTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerTrackingView.swift; sourceTree = "<group>"; };
+		86BCBB3C2C64D2E2003BD1CE /* 🌐RealityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "🌐RealityView.swift"; sourceTree = "<group>"; };
+		86BCBB3E2C664490003BD1CE /* JonintPositionsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JonintPositionsPanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +111,10 @@
 				165ADB4E2B4B71B0008A756F /* App.swift */,
 				165ADB502B4B71B0008A756F /* ContentView.swift */,
 				16688DE52B59F35F004CE12B /* 🥽AppModel.swift */,
-				1642FAB82B4D6CAA0084F9ED /* 🌐RealityView.swift */,
+				86BCBB3C2C64D2E2003BD1CE /* 🌐RealityView.swift */,
 				160ED7972B4B74C5002AD987 /* 🧑HeadTrackingSystem.swift */,
 				164C78022B5746AD008FF872 /* 🧩Entity.swift */,
+				8620833D2C6B726E004D3026 /* FingerTrackingView.swift */,
 				16C95ADF2B5E74FD00CF0FED /* 🛠️Menu */,
 				16267B4E2B57D148000CA8AD /* Supporting files */,
 			);
@@ -132,6 +135,7 @@
 			children = (
 				16C95AE42B5E762400CF0FED /* 🛠️MenuTop.swift */,
 				16C95AE62B5E7BFF00CF0FED /* 🛠️AboutPanel.swift */,
+				86BCBB3E2C664490003BD1CE /* JonintPositionsPanel.swift */,
 			);
 			path = "🛠️Menu";
 			sourceTree = "<group>";
@@ -211,14 +215,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8620833E2C6B726E004D3026 /* FingerTrackingView.swift in Sources */,
 				160ED7982B4B74C5002AD987 /* 🧑HeadTrackingSystem.swift in Sources */,
-				1642FAB92B4D6CAA0084F9ED /* 🌐RealityView.swift in Sources */,
 				16C95AE72B5E7BFF00CF0FED /* 🛠️AboutPanel.swift in Sources */,
 				165ADB512B4B71B0008A756F /* ContentView.swift in Sources */,
+				86BCBB3D2C64D2E2003BD1CE /* 🌐RealityView.swift in Sources */,
 				164C78032B5746AD008FF872 /* 🧩Entity.swift in Sources */,
 				16688DE62B59F35F004CE12B /* 🥽AppModel.swift in Sources */,
 				165ADB4F2B4B71B0008A756F /* App.swift in Sources */,
 				16C95AE52B5E762400CF0FED /* 🛠️MenuTop.swift in Sources */,
+				86BCBB3F2C664490003BD1CE /* JonintPositionsPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 7D3823PYKF;
+				DEVELOPMENT_TEAM = 3H55CV6HDD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Supporting files/Info.plist";
@@ -362,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = net.oihio;
+				PRODUCT_BUNDLE_IDENTIFIER = dhux.handtracking.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -379,7 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 7D3823PYKF;
+				DEVELOPMENT_TEAM = 3H55CV6HDD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Supporting files/Info.plist";
@@ -389,7 +395,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = net.oihio;
+				PRODUCT_BUNDLE_IDENTIFIER = dhux.handtracking.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;

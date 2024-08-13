@@ -78,3 +78,7 @@ struct 🛠️AboutPanel: View {
         .frame(width: 640, height: 500)
     }
 }
+
+//#Preview {
+//    🛠️AboutPanel()
+//}
